@@ -1,6 +1,3 @@
-# Pasta com XMLs brutos raspados com ferramentas_scielo_v2
-scielo/*
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -130,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# mkdocs
+/documentation/site
