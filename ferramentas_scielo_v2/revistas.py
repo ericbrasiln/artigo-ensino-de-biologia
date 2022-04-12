@@ -2,23 +2,25 @@ import time, re
 from issue_xml import*
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait 
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
-from webdriver_manager.firefox import GeckoDriverManager
+from webdriver_manager.chrome import ChromeDriverManager
 
 def revistas (diretorio, link, link_journal, journal_name, saveMode):
     '''
     função para acessar cada revista.
     '''
-    firefox_options = Options()
-    firefox_options.add_argument('-lang=pt-BR')
-    firefox_options.add_argument("--headless")
-    firefox_options.add_argument("--no-sandbox")
-    firefox_options.add_argument("--start-maximized")
-    s=Service(GeckoDriverManager().install())
-    driver = webdriver.Firefox(service=s, options=firefox_options)
+    chrome_options = Options()
+    #pass user agent
+    chrome_options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36')
+    chrome_options.add_argument('-lang=pt-BR')
+    #chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--start-maximized")
+    s=Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=s, options=chrome_options)
     driver.get(link_journal)
     #Botão de aceitar cookies
     try:

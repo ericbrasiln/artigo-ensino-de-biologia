@@ -2,9 +2,9 @@ from revistas import revistas
 from reports import report_scrape
 import time, os
 from selenium import webdriver
-from webdriver_manager.firefox import GeckoDriverManager
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
-from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait 
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
@@ -38,13 +38,13 @@ def main():
             #Se a pasta ainda não existir, cria a pasta
             os.makedirs(diretorio)
         # Definição das opções do driver
-        firefox_options = Options()
-        firefox_options.add_argument('-lang=pt-BR')
-        firefox_options.add_argument("--headless")
-        firefox_options.add_argument("--no-sandbox")
-        firefox_options.add_argument("--start-maximized")
-        s=Service(GeckoDriverManager().install())
-        driver = webdriver.Firefox(service=s, options=firefox_options)
+        chrome_options = Options()
+        chrome_options.add_argument('-lang=pt-BR')
+        chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--start-maximized")
+        s=Service(ChromeDriverManager().install())
+        driver = webdriver.Chrome(service=s, options=chrome_options)
         driver.get(url)
         #botão de aceitar cookies
         try:

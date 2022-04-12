@@ -5,8 +5,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait 
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.firefox.options import Options
-from webdriver_manager.firefox import GeckoDriverManager
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 import ssl
 
@@ -41,13 +41,13 @@ def get_issue(diretorio, link, issue_link, pasta, saveMode):
     '''
     Função para baixar o xml de cada artigo
     '''
-    firefox_options = Options()
-    firefox_options.add_argument('-lang=pt-BR')
-    firefox_options.add_argument("--headless")
-    firefox_options.add_argument("--no-sandbox")
-    firefox_options.add_argument("--start-maximized")
-    s=Service(GeckoDriverManager().install())
-    driver = webdriver.Firefox(service=s, options=firefox_options)
+    chrome_options = Options()
+    chrome_options.add_argument('-lang=pt-BR')
+    #chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--start-maximized")
+    s=Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=s, options=chrome_options)
     driver.get(issue_link)
     #Botão de aceitar cookies
     try:
@@ -84,6 +84,7 @@ def get_issue(diretorio, link, issue_link, pasta, saveMode):
                 except Exception as e:
                     print(f'Erro: {e}')
                     error_xml_list.append(xml_link)
+                    pass
             else:
                 print('\nXML já existe.')
             if saveMode == 2:

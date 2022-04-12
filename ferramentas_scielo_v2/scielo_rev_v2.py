@@ -26,7 +26,7 @@ def main():
         report_scrape_rev(diretorio, timestr, revList, saveMode)
         for revista in revList:
             link = f'https://www.scielo.br/j/{revista}/'
-            link_final = link+'grid'
+            link_final = f'https://www.scielo.br//j/{revista}/grid'
             revistas (diretorio, link, link_final, revista, saveMode)
 
 if __name__ == "__main__":
