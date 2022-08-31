@@ -1,5 +1,5 @@
 # Pasta com XMLs brutos raspados com ferramentas_scielo_v2
-scielo/*
+dataset_scielo/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
