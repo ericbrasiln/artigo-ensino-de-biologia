@@ -1,11 +1,11 @@
-revista,abr,qualis 13-16,situação
-Educação & Sociedade,es,A1,ok
-Cadernos CEDES,ccedes,A1,ok
-Ciência & Educação (Bauru),ciedu,A1,ok
-Educação e Pesquisa,ep,A1,ok
-Educação em Revista,edur,A1,ok
-Educação & Realidade,edreal,A1,ok
-Educar em Revista,er,A1,
-Ensaio: Avaliação e Políticas Públicas em Educação,ensaio,A1,
-Ensaio Pesquisa em Educação em Ciências (Belo Horizonte),epec,A1,
-Revista Brasileira de Educação,rbedu,A1,
+revista,abr,qualis 13-16,xml,csv
+Educação & Sociedade,es,A1,ok,ok
+Cadernos CEDES,ccedes,A1,ok,ok
+Ciência & Educação (Bauru),ciedu,A1,ok,ok
+Educação e Pesquisa,ep,A1,ok,ok
+Educação em Revista,edur,A1,ok,ok
+Educação & Realidade,edreal,A1,ok,ok
+Educar em Revista,er,A1,ok,ok
+Ensaio: Avaliação e Políticas Públicas em Educação,ensaio,A1,ok,ok
+Ensaio Pesquisa em Educação em Ciências (Belo Horizonte),epec,A1,ok,ok
+Revista Brasileira de Educação,rbedu,A1,ok,ok
