@@ -19,7 +19,8 @@ A lista de revistas coletadas no Scielo.br está [disponível aqui](revistas_sci
 ### Base de dados
 
 - A base de dados de artigos em formato XML coletados no Scielo.br está [disponível aqui](http://u.pc.cd/4fe).
-- A base de dados de artigos em formato CSV coletados no Scielo.br está [disponível aqui](https://od.lk/fl/ODRfMTMzOTI5NjRf).
+- A base de dados de artigos em formato CSV coletados no Scielo.br, de cada uma das revistas, está [disponível aqui](https://od.lk/fl/ODRfMTMzOTI5NjRf).
+- O CSV final, compreendendo todas as revistas reunidas, está [disponível aqui](https://od.lk/fl/ODRfMTMzOTI5NjZf)
 
 ## Análise
 
