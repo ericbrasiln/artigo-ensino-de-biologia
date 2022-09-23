@@ -8,7 +8,7 @@ Material para artigo sobre ensino de biologia e questões relacionadas à educa�
 
 Raspagem de dados através da [ferramentas_scielo_v2](https://labhdufba.github.io/ferramentas_scielo_v2/) do LABHDUFBA [^1].
 
-[^1]: Brasil, E., Nascimento, L., & Andrade, G. (2021). Ferramentas Scielo v2 (Version 1.0.1) [Computer software]. https://doi.org/10.5281/zenodo.5168727
+[^1]: Brasil, E., Nascimento, L., Andrade, G., & Barbosa, J. (2022). Ferramentas Scielo v2 (Version 2.2) [Computer software]. https://doi.org/10.5281/zenodo.5168727
 
 Após a raspagem, os arquivos XML foram processados pela ferramenta [scielo_xml_to_csv](https://labhdufba.github.io/ferramentas_scielo_v2/#conversao-de-xml-para-csv) e foi gerado um arquivo CSV com os dados.
 
@@ -19,9 +19,8 @@ A lista de revistas coletadas no Scielo.br está [disponível aqui](revistas_sci
 ### Base de dados
 
 - A base de dados de artigos em formato XML coletados no Scielo.br está [disponível aqui](http://u.pc.cd/4fe).
-- A base de dados de artigos em formato CSV coletados no Scielo.br está [disponível aqui](http://u.pc.cd/zpvitalK).
+- A base de dados de artigos em formato CSV coletados no Scielo.br está [disponível aqui](https://od.lk/fl/ODRfMTMzOTI5NjRf).
 
 ## Análise
 
 - Dicionário de termos que servirão de base para a filtragem da base de dados: [disponível aqui](dic_termos.csv).
-
