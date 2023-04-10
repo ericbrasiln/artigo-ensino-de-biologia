@@ -1,7 +1,11 @@
 # Pasta com XMLs brutos raspados com ferramentas_scielo_v2
 dataset_scielo/*
-data-analysis/raw-data.csv
 
+# CSVs brutos e tratados no processo de análise
+data-analysis/*.csv
+
+# Pasta com PDFs raspados do Renbio
+renbio-scraper/renbio_pdfs/*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
